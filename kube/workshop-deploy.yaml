@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    tier: app
+  name: tenant-details
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tenant-details
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tenant-details
+    spec:
+      containers:
+      - image: karankapoor/multi-tenant:karan
+        name: tenant-details
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: tenant-identity
+

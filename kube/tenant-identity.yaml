@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  id: "01"
+  name: tenant-1
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: tenant-identity

@@ -1,0 +1,24 @@
+{
+  "name": "docker-workshop",
+  "version": "1.0.0",
+  "description": "A quick and easy repo for creating your first nodejs docker container",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karan-kapoor90/docker-workshop.git"
+  },
+  "author": "Karan Kapoor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karan-kapoor90/docker-workshop/issues"
+  },
+  "homepage": "https://github.com/karan-kapoor90/docker-workshop#readme"
+}
