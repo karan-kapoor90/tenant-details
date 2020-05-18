@@ -4,3 +4,10 @@ kind: Kustomization
 bases:
 - ../../kube
 namespace: k-tenant
+commonLabels:
+  tenant: k-tenant
+configMapGenerator:
+  - name: default-identity
+    literals:
+      - id="10"
+      - name="k-tenant" 

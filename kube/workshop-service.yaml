@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     tier: web
-  name: tenant-details-svc
+  name: k-details-svc
 spec:
   externalTrafficPolicy: Cluster
   ports:
@@ -12,6 +12,6 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    app: tenant-details
+    app: k-details
   sessionAffinity: None
   type: NodePort
