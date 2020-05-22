@@ -7,7 +7,7 @@ metadata:
   name: k-details
   namespace: k-tenant
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: k-details
