@@ -5,8 +5,9 @@ metadata:
   labels:
     tier: app
   name: k-details
+  namespace: k-tenant
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: k-details
