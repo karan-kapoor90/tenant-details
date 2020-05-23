@@ -3,6 +3,6 @@ kind: Kustomization
 
 resources:  
 - nginx-resource.yaml
-- workshop-deploy.yaml
-- workshop-service.yaml
-- tenant-identity.yaml
+- deployment.yaml
+- cluster-service.yaml
+- tenant-config.yaml

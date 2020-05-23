@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     tier: app
-  name: k-details
+  name: tenant-details
   namespace: k-tenant
 spec:
   replicas: 1
