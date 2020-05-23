@@ -5,7 +5,7 @@ metadata:
   labels:
     tier: app
   name: tenant-details
-  namespace: k-tenant
+  namespace: tenant-details
 spec:
   replicas: 1
   selector:
@@ -23,7 +23,7 @@ spec:
         app: tenant-details
     spec:
       containers:
-      - image: karankapoor/multi-tenant:karan
+      - image: karankapoor/multi-tenant
         name: tenant-details
         imagePullPolicy: Always
         ports:

@@ -5,6 +5,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
   name: tenant-ingress-ws
+  namespace: tenant-details
 spec:
   rules:
   - host: app.my-pks.karankapoor.in

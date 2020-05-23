@@ -5,3 +5,4 @@ data:
 kind: ConfigMap
 metadata:
   name: tenant-identity
+  namespace: tenant-details

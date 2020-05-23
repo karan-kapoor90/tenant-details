@@ -4,6 +4,7 @@ metadata:
   labels:
     tier: web
   name: tenant-details-svc
+  namespace: tenant-details
 spec:
   ports:
   - port: 3000
