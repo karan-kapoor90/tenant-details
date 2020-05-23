@@ -4,13 +4,13 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
-  name: k-ingress-ws
+  name: tenant-ingress-ws
 spec:
   rules:
   - host: app.my-pks.karankapoor.in
     http:
       paths:
       - backend:
-          serviceName: k-details-svc
+          serviceName: tenant-details-svc
           servicePort: 3000
         path: /v1(/|$)(.*)

@@ -10,7 +10,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: k-details
+      app: tenant-details
   strategy:
     rollingUpdate:
       maxSurge: 3
@@ -20,15 +20,15 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: k-details
+        app: tenant-details
     spec:
       containers:
       - image: karankapoor/multi-tenant:karan
-        name: k-details
+        name: tenant-details
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
         envFrom:
         - configMapRef:
-            name: k-identity
+            name: tenant-identity
 

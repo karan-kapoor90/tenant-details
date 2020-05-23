@@ -4,4 +4,4 @@ data:
   name: k-tenant
 kind: ConfigMap
 metadata:
-  name: k-identity
+  name: tenant-identity
