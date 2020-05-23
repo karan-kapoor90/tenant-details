@@ -11,4 +11,8 @@ app.get('/details', (req, res) => {
     res.send({'tenantName':name,'tenantID':id});
 });
 
+app.get('/health', (req, res) => {
+    res.send({'health':'ok','message':'ok'});
+})
+
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
