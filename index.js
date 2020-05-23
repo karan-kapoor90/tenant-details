@@ -12,7 +12,7 @@ app.get('/details', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-    res.send({'health':'ok','message':'ok'});
+    res.send({'health':'ok','message':'All is well'});
 })
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
