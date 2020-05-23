@@ -15,4 +15,8 @@ app.get('/health', (req, res) => {
     res.send({'health':'ok','message':'All is well'});
 })
 
+app.get('/test', (req, res) => {
+    res.send({'message':'Yup its all working fine'})
+})
+
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
