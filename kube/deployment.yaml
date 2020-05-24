@@ -31,4 +31,9 @@ spec:
         envFrom:
         - configMapRef:
             name: tenant-identity
+        resources:
+          limits:
+            memory: "32Mi"
+            cpu: "250m"
+
 
