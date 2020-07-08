@@ -52,4 +52,4 @@ kubectl get all
 
 > *Bonus tip*: To see a truly beautiful automatic deployment experience, create an account at https://console.run.pivotal.io; follow the steps to create an org and an environment, setup cf CLI on your machine and login on the cli using cf login, and try pushing the app you created.
 
-`cf push docker-workshop -c "node index.js"`
+`cf push docker-workshop

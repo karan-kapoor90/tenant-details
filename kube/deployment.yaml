@@ -23,11 +23,11 @@ spec:
         app: tenant-details
     spec:
       containers:
-      - image: karankapoor/multi-tenant
+      - image: karankapoor/tenant-details
         name: tenant-details
         imagePullPolicy: Always
         ports:
-        - containerPort: 3000
+        - containerPort: 8000
         envFrom:
         - configMapRef:
             name: tenant-identity
