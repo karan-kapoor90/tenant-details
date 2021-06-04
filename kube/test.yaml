@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: mydeployment-ing
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: mydeployment
+          servicePort: 3000
+        path: /banana
+    #host: kubernetes.docker.internal
+    
